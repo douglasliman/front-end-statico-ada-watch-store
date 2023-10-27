@@ -4,90 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relogios</title>
+    <title>Audemars Piguet</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    
-  />
+    <link rel="shortcut icon" href="./assets/Favicon-Upper-Watches.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
-    <header class="animate__fadeInDown">
+    <header class="animate__fadeInDown" aria-label="barra de navegação">
         <nav>
-            <div><img src="./assets/logo.png" alt="" class="header-logo"></div>
+            <div> <a href="#main" aria-label="link para a página inicial"> <img src="./assets/logo.png" alt="logo do grupo de relógios suíços"></a></div>
             <ul class="nav">
-              <a href="#main">Home</a>
-              <a href="#products">Products</a>
-              <a href="#contacts">Contacts</a>
+                <a href="#main" aria-label="link para a página inicial">Home</a>
+                <a href="#products" aria-label="link para a página de produtos">Products</a>
+                <a href="#contacts" aria-label="link para a página de contatos">Contacts</a>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="mainly" id="main">
-            <video muted="muted" loop="loop" autoplay="autoplay" playsinline>
+        <section class="mainly" id="main" aria-label="página principal, vídeo de relógios" aria-labelledby="main-title">
+            <video muted="muted" loop="loop" autoplay="autoplay" playsinline aria-hidden="true">
                 <source src="./assets/AP_CODE BEIGE_1920x1080_header.mp4" type="video/mp4">
             </video>
-            <div class="text-overlay">
-                <h1>Desing <br><span>In motion</span></h1>
+            <div class="text-overlay" aria-labelledby="main-title">
+                <h1 id="main-title">Design <br><span>In Motion</span></h1>
                 <p>Audemars Piguet celebrates the power of self-expression with a variety of colors, materials, and
                     sizes catering to all styles, tastes, and wrists.</p>
             </div>
         </section>
     </main>
     <span id="products"></span>
-    <section class="products" >
+    <section class="products" aria-label="sessão de produtos">
         <h1>Linha Royal Oak</h1>
         <table>
             <tr>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (1).jpg" alt="Imagem do relogio offshore para ">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (1).jpg" alt="Imagem do relogio offshore ">
                         <div class="card-text">
 
-                            <p class="name-product"> Offshore</p>
-                            <span>R$: 199,99  </span><small>R$:399,99</small>
+                            <p class="name-product" aria-label="nome do relogio"> Offshore</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
 
                         </div>
                     </div>
                 </td>
                 <td>
-                    <div class="card  animate__zoomIn">
-                        <img src="./assets/produto (2).jpg" alt="Produto 2">
+                    <div class="card  animate__zoomIn" aria-label="card de produto do relogio offshore" >
+                        <img src="./assets/produto (2).jpg" alt="Imagem do relogio royal oak ">
                         <div class="card-text">
 
-                            <p class="name-product">Royal Oak</p>
-                            <span>R$: 199,99  </span><small>R$:399,99</small>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
+                            <p class="name-product" aria-label="nome do relogio">Royal Oak</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (3).jpg" alt="Produto 2">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (3).jpg" alt="Imagem do relogio frosted gold ">
                         <div class="card-text">
-                            <p class="name-product">Frosted Gold</p>
-                            <span>R$: 199,99  </span><small>R$:399,99</small>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
+                            <p class="name-product" aria-label="nome do relogio">Frosted Gold</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (4).jpg" alt="Produto 2">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (4).jpg" alt="Imagem do relogio perpetual calendar ">
                         <div class="card-text">
 
-                            <p class="name-product">
-                                 Perpetual Calendar</p>
-                                 <span>R$: 199,99  </span><small>R$:399,99</small>
+                            <p class="name-product" aria-label="nome do relogio">Perpetual Calendar</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
 
                         </div>
@@ -96,105 +91,98 @@
             </tr>
             <tr>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (5).jpg" alt="Produto 3">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (5).jpg" alt="Imagem do relogio extra-thin ">
                         <div class="card-text">
-                            <p class="name-product"> Extra-Thin</p>
-                            <span>R$: 199,99  </span><small>R$:399,99</small>
+                            <p class="name-product" aria-label="nome do relogio"> Extra-Thin</p>
+                            <span aria-label="discount" >R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
 
                         </div>
-                        
+
                     </div>
                 </td>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (6).jpg" alt="Produto 4">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (6).jpg" alt="Imagem do relogio Tourbillon ">
                         <div class="card-text">
-                            
-                        <p class="name-product"> Tourbillon</p>
-                        <span>R$: 199,99  </span><small>R$:399,99</small>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
+
+                            <p class="name-product" aria-label="nome do relogio"> Tourbillon</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
 
                         </div>
 
                     </div>
                 </td>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (7).jpg" alt="Produto 4">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (7).jpg" alt="Imagem do relogio Dual Time">
                         <div class="card-text">
-                            
-                        <p class="name-product"> Dual Time</p>
-                        <span>R$: 199,99  </span><small>R$:399,99</small>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
+
+                            <p class="name-product" aria-label="nome do relogio"> Dual Time</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
 
                         </div>
-
-                 
                     </div>
                 </td>
                 <td>
-                    <div class="card animate__zoomIn">
-                        <img src="./assets/produto (8).jpg" alt="Produto 4">
+                    <div class="card animate__zoomIn" aria-label="card de produto do relogio offshore">
+                        <img src="./assets/produto (8).jpg" alt="Imagem do relogio Chronograph">
                         <div class="card-text">
-                            
-                        <p class="name-product">   Chronograph</p>
-                        <span>R$: 199,99  </span><small>R$:399,99</small>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
+
+                            <p class="name-product" aria-label="nome do relogio"> Chronograph</p>
+                            <span aria-label="discount">R$: 4199,99 </span><small aria-label="price">R$:6399,99</small>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias!</p>
 
                         </div>
 
-                   
+
                     </div>
                 </td>
             </tr>
         </table>
     </section>
+    <section class="contacts" id="contacts" aria-label="área para passar seus dados de contatos" aria-labelledby="contacts-title">
+        <h2 id="contacts-title">Entre em Contato</h2>
+        <form action="#" method="post">
+            <label for="nome" class="sr-only">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" minlength="3" required aria-label="Nome" aria-required="true" />
 
-        <section class="contacts" id="contacts">
-            <h2>Entre em Contato</h2>
-            <form action="#" method="post">
-                <label for="nome"  class="sr-only">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome" minlength="3" required aria-label="Nome" aria-required="true" />
-        
-                <label for="email" class="sr-only">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email" aria-required="true" />
-        
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-        
+            <label for="email" class="sr-only">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email" aria-required="true" />
 
-   <footer>
-    <div class="links">
-        <ul class="footer-links">
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-        </ul>
-        <ul class="footer-links">
-            <li><p>Redes Sociais</p></li>
-            <div class="socials">
-                <li><a href="https://www.linkedin.com/in/douglas-queiroz/"><img src="./assets/linkedin-in.svg" alt="">  </a></li>
-                <li><a href="https://www.instagram.com/douglas.liman/"><img src="./assets/instagram.svg" alt=""></a></li>
-            </div>
-        </ul>
-        <ul class="footer-links">
-            <li>Endereço: 123 Rua da Amostra</li>
-            <li>Email: contato@example.com</li>
-            <li>Telefone: (123) 456-7890</li>
-        </ul>
-    </div>
+            <button type="submit" aria-label="botão de enviar">Contatar-me</button>
+        </form>
+    </section>
 
-   </footer>
-  
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-   <script src="./js/index.js"></script>
-   
+    <footer>
+        <div class="links">
+            <ul class="footer-links">
+                <li><a href="#" aria-label="Link para a página de Contato">Contact</a></li>
+                <li><a href="#" aria-label="Link para a página Sobre">About</a></li>
+                <li><a href="#" aria-label="Link para a página de Serviços">Services</a></li>
+            </ul>
+            <ul class="footer-links" aria-labelledby="social-media-title">
+                <li id="social-media-title">Redes Sociais</li>
+                <div class="socials">
+                    <li><a href="https://www.linkedin.com/in/douglas-queiroz/" aria-label="Link para o LinkedIn"><img src="./assets/linkedin-in.svg"
+                                alt="LinkedIn"></a></li>
+                    <li><a href="https://www.instagram.com/douglas.liman/" aria-label="Link para o Instagram"><img src="./assets/instagram.svg" alt="Instagram"></a></li>
+                </div>
+            </ul>
+            <ul class="footer-links" aria-labelledby="address-title">
+                <li id="address-title">Endereço: 123 Rua da Amostra</li>
+                <li>Email: contato@example.com</li>
+                <li>Telefone: (123) 456-7890</li>
+            </ul>
+        </div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
